@@ -31,6 +31,9 @@ namespace umfgcloud.loja.aplicacao.service.Classes
 
         public async Task CadastrarAsync(UsuarioDTO.SingUpRequest dto)
         {
+            // classe concreta é toda classe que eu utilizo o new para criar
+            // uma instancia em memoria
+            // classes estaticas e abstratas não tem essa possibilidade
             var identityUser = new IdentityUser()
             {
                 UserName = dto.Email,

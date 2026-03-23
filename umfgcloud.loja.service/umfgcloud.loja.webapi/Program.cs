@@ -19,7 +19,7 @@ namespace umfgcloud.loja.webapi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwagger();
             builder.Services.AddDataContext(builder.Configuration);
-            builder.Services.AddServicos();
+            builder.Services.AddServicos(); //isto é exatamente igual a isto: ServicosExtensions.AddServicos(builder.Services);
 
             var app = builder.Build();
 
